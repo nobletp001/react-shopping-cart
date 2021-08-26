@@ -80,20 +80,31 @@ if (event.target.value ==="") {
       <>
         <div className="grid-container">
           <header>
-            <a href="/"> React Shopping Cart</a>
+            <h5> React Shopping Cart</h5>
           </header>
           <main>
             <div className="content">
               <div className="main">
-                <Filter count={this.state.products.length}
-                size={this.state.size}
-                sort={this.state.sort}
-                filterProducts={this.filterProducts}
-                sortProducts={this.sortProducts}
+                <Filter
+                  count={this.state.products.length}
+                  size={this.state.size}
+                  sort={this.state.sort}
+                  filterProducts={this.filterProducts}
+                  sortProducts={this.sortProducts}
                 />
-                <Products products={this.state.products} addToCart={this.addToCart}/>
+                <Products
+                  products={this.state.products}
+                  addToCart={this.addToCart}
+                />
               </div>
-              <div className="sidebar"> <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} createOrder={this.createOrder}/> </div>
+              <div className="sidebar">
+                {" "}
+                <Cart
+                  cartItems={this.state.cartItems}
+                  removeFromCart={this.removeFromCart}
+                  createOrder={this.createOrder}
+                />{" "}
+              </div>
             </div>
           </main>
           <footer>All right is reserved.</footer>

@@ -4,7 +4,7 @@
             "_id":"dress1",
             "title":"Dress 1",
             "image":"/images/dress1.jpg",
-            "discription":"about dress 1",
+            "discription":"about dress 1aaaaaaaa ",
             "price":19,
             "availableSizes":["XL", "XXL"]
         },
